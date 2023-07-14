@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -7,6 +6,8 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  isRouteErrorResponse,
+  useRouteError,
 } from "@remix-run/react";
 
 import styles from "./tailwind.css";
